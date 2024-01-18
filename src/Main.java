@@ -4,8 +4,8 @@ import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) {
-        String a = "AB BB BC AA AB BB";
-        String [] parts = a.split(" ");
+        String input = "AAABBCADAC";
+        String[] parts = getEveryTwoSymbols(input);
         System.out.println(Arrays.toString(parts));
         Map<String, Boolean> map = new TreeMap<>();
         int count;
@@ -23,5 +23,27 @@ public class Main {
             }
         }
         System.out.println(map);
+
+    }
+
+    public static String[] getEveryTwoSymbols(String input) {
+        int length = input.length();
+        int resultLength;
+        if(length % 2 == 0){
+            resultLength = length / 2;
+        }else{
+            resultLength = length / 2 + 1;
+        }
+        String[] result = new String[resultLength];
+
+        for (int i = 0; i < length; i += 2) {
+            if (i + 1 < length) {
+                result[i / 2] = input.substring(i, i + 2);
+            } else {
+                result[i / 2] = input.substring(i);
+            }
+        }
+
+        return result;
     }
 }
