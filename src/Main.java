@@ -4,7 +4,7 @@ import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) {
-        String input = "AAABBCADAC";
+        String input = "AAABBCADACFAAA";
         String[] parts = getEveryTwoSymbols(input);
         System.out.println(Arrays.toString(parts));
         Map<String, Boolean> map = new TreeMap<>();
