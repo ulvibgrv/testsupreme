@@ -1,10 +1,11 @@
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class OneSymbol {
     public static void result(String input){
         String[] parts = input.split("");
-        Map<String, Boolean> map = new TreeMap<>();
+        Map<String, Boolean> map = new LinkedHashMap<>();
         int count;
         for(int i = 0; i < parts.length; i++){
             count = 0;
