@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        String input = "AAABBCADACAA";
-        TwoSymbol.result(input);
+        String input = "AAABBCADACAAFBGA";
         OneSymbol.result(input);
+        TwoSymbol.result(input);
     }
 }
