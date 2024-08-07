@@ -21,5 +21,6 @@ public class OneSymbol {
             }
         }
         System.out.println(map);
+        System.out.println("Hello SupremeCourt");
     }
 }
